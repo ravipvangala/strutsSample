@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"https://struts.apache.org/dtds/struts-2.3.dtd">
+<struts>
+	<package name="default" extends="struts-default">
+		<action name="ListContacts"
+			class="github.guisofiati.struts2xml.actions.ListContactsAction">
+			<result name="success">/list.jsp</result>
+		</action>
+		<action name="CreateContact"
+			class="github.guisofiati.struts2xml.actions.CreateContactAction">
+			<result name="success">/index.jsp</result>
+		</action>
+		<action name="UpdateContact"
+			class="github.guisofiati.struts2xml.actions.UpdateContactAction">
+			<result name="success">/index.jsp</result>
+		</action>
+		<action name="GetContact"
+			class="github.guisofiati.struts2xml.actions.GetContactAction">
+			<result name="success">/update.jsp</result>
+		</action>
+		<action name="DeleteContact"
+			class="github.guisofiati.struts2xml.actions.DeleteContactAction">
+			<result name="success">/index.jsp</result>
+		</action>
+	</package>
+</struts>
